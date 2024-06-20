@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<testsuite failures="0" skipped="0" name="cucumber-js" time="30.121819427999995" tests="7">
+  <testcase classname="Login API Tests" name="Successful login" time="1.385539689">
+    <system-out><![CDATA[Given I navigate to the API url...........................................passed
+When I login with username "michaelw" and password "michaelwpass".........passed
+Then the response status should be 200....................................passed
+And the response should contain a "accessToken"...........................passed]]></system-out>
+  </testcase>
+  <testcase classname="Login API Tests" name="Successful login [1]" time="0.47470819000000003">
+    <system-out><![CDATA[Given I navigate to the API url...........................................passed
+When I login with username "michaelw" and password "michaelw".............passed
+Then the response status should be 400....................................passed
+And the response should contain a "errorMessage"..........................passed]]></system-out>
+  </testcase>
+  <testcase classname="Products API Tests" name="Fetch products with access token" time="0.762741893">
+    <system-out><![CDATA[Given I navigate to the API url...........................................passed
+When I login with username "michaelw" and password "michaelwpass".........passed
+And I have a valid access token...........................................passed
+And I fetch products with a limit of 2....................................passed
+Then the response status should be 200....................................passed
+And the response should contain 2 products................................passed]]></system-out>
+  </testcase>
+  <testcase classname="Products API Tests" name="Update product" time="1.325816693">
+    <system-out><![CDATA[Given I navigate to the API url...........................................passed
+When I login with username "michaelw" and password "michaelwpass".........passed
+And I have a valid access token...........................................passed
+When I update the first product name to "Updated Product Name"............passed
+Then the update response status should be 200.............................passed]]></system-out>
+  </testcase>
+  <testcase classname="Products API Tests" name="Delete product" time="1.1652476889999999">
+    <system-out><![CDATA[Given I navigate to the API url...........................................passed
+When I login with username "michaelw" and password "michaelwpass".........passed
+And I have a valid access token...........................................passed
+When I delete the first product...........................................passed
+Then the delete response status should be 200.............................passed]]></system-out>
+  </testcase>
+  <testcase classname="Login functionality" name="User attempts to login with invalid credentials" time="8.42533439">
+    <system-out><![CDATA[Given I navigate to the Paribu homepage...................................passed
+When I close the cookie notification......................................passed
+And I click on the login button...........................................passed
+And I fill in the login form with invalid credentials.....................passed
+And I submit the login form...............................................passed
+Then I should see an error message indicating invalid credentials.........passed]]></system-out>
+  </testcase>
+  <testcase classname="Paribu Web Automation" name="Check total price calculation" time="16.582430883999997">
+    <system-out><![CDATA[Given I navigate to the Paribu homepage...................................passed
+When I close the cookie notification......................................passed
+And I navigate to the Markets page........................................passed
+And I select the FAN filter...............................................passed
+And I set the price change time range to 12 hours.........................passed
+And I click on the 3rd cryptocurrency in the list.........................passed
+And I enter the current price in the Unit Price field.....................passed
+And I enter 5 in the Amount field.........................................passed
+Then the total price should be correctly calculated.......................passed]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,742 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-api-tests;successful-login",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Successful login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 248330700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the API url",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiLoginSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1989898
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I login with username \"michaelw\" and password \"michaelwpass\"",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiLoginSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1083985398
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiLoginSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2529797
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the response should contain a \"accessToken\"",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiLoginSteps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2076297
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 46627599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-api-tests;successful-login",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Successful login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 173052300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the API url",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiLoginSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 897698
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I login with username \"michaelw\" and password \"michaelw\"",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiLoginSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 253335599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the response status should be 400",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiLoginSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1052297
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the response should contain a \"errorMessage\"",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiLoginSteps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1182997
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 45187299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-api-tests",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login API Tests",
+    "tags": [],
+    "uri": "caseParibu\\test\\features\\apiLogin.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "products-api-tests;fetch-products-with-access-token",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Fetch products with access token",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 180484000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the API url",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiLoginSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 839000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I login with username \"michaelw\" and password \"michaelwpass\"",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiLoginSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 261647998
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I have a valid access token",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiProductsSteps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 818999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I fetch products with a limit of 2",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiProductsSteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 276460299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiLoginSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1284698
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the response should contain 2 products",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiProductsSteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2371700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 38835199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "products-api-tests;update-product",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Update product",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 162018100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the API url",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiLoginSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 836598
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I login with username \"michaelw\" and password \"michaelwpass\"",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiLoginSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 333042100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I have a valid access token",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiProductsSteps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 923000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I update the first product name to \"Updated Product Name\"",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiProductsSteps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 785658699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the update response status should be 200",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiProductsSteps.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1236597
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 42101599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "products-api-tests;delete-product",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Delete product",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 161531999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the API url",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiLoginSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1159897
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I login with username \"michaelw\" and password \"michaelwpass\"",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiLoginSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 284665098
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I have a valid access token",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiProductsSteps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 910198
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I delete the first product",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiProductsSteps.ts:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 667312200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "the delete response status should be 200",
+            "match": {
+              "location": "caseParibu\\test\\steps\\apiProductsSteps.ts:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1250797
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 48417500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "products-api-tests",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Products API Tests",
+    "tags": [],
+    "uri": "caseParibu\\test\\features\\apiProducts.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality;user-attempts-to-login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "User attempts to login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 170524600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I navigate to the Paribu homepage",
+            "match": {
+              "location": "caseParibu\\test\\steps\\homepageSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1895389398
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I close the cookie notification",
+            "match": {
+              "location": "caseParibu\\test\\steps\\homepageSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3635401600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I click on the login button",
+            "match": {
+              "location": "caseParibu\\test\\steps\\homepageSteps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 298416100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I fill in the login form with invalid credentials",
+            "match": {
+              "location": "caseParibu\\test\\steps\\loginSteps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1426299297
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I submit the login form",
+            "match": {
+              "location": "caseParibu\\test\\steps\\loginSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 112142198
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see an error message indicating invalid credentials",
+            "match": {
+              "location": "caseParibu\\test\\steps\\loginSteps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 829483698
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 57677499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login functionality",
+    "tags": [],
+    "uri": "caseParibu\\test\\features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "paribu-web-automation;check-total-price-calculation",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Check total price calculation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 185793499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the Paribu homepage",
+            "match": {
+              "location": "caseParibu\\test\\steps\\homepageSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2551965798
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I close the cookie notification",
+            "match": {
+              "location": "caseParibu\\test\\steps\\homepageSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2188136499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I navigate to the Markets page",
+            "match": {
+              "location": "caseParibu\\test\\steps\\homepageSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67135298
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I select the FAN filter",
+            "match": {
+              "location": "caseParibu\\test\\steps\\marketSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4051865498
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I set the price change time range to 12 hours",
+            "match": {
+              "location": "caseParibu\\test\\steps\\marketSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 132583699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click on the 3rd cryptocurrency in the list",
+            "match": {
+              "location": "caseParibu\\test\\steps\\marketSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 93354099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I enter the current price in the Unit Price field",
+            "match": {
+              "location": "caseParibu\\test\\steps\\marketSteps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7125454399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I enter 5 in the Amount field",
+            "match": {
+              "location": "caseParibu\\test\\steps\\marketSteps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37339998
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the total price should be correctly calculated",
+            "match": {
+              "location": "caseParibu\\test\\steps\\marketSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45974997
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 102827100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "paribu-web-automation",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Paribu Web Automation",
+    "tags": [],
+    "uri": "caseParibu\\test\\features\\market.feature"
+  }
+]

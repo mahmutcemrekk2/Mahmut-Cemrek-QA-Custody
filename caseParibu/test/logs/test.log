@@ -1,0 +1,93 @@
+2024-06-20T08:07:43.700Z - Browser launched: msedge
+2024-06-20T08:07:44.008Z - !!-------Successful login is started-------!!
+2024-06-20T08:07:44.011Z - !!-------I navigate to the API url is started-------!!
+2024-06-20T08:07:44.013Z - !!-------I navigate to the API url is ended-------!!
+2024-06-20T08:07:44.014Z - !!-------I login with username "michaelw" and password "michaelwpass" is started-------!!
+2024-06-20T08:07:45.098Z - !!-------I login with username "michaelw" and password "michaelwpass" is ended-------!!
+2024-06-20T08:07:45.099Z - !!-------the response status should be 200 is started-------!!
+2024-06-20T08:07:45.101Z - !!-------the response status should be 200 is ended-------!!
+2024-06-20T08:07:45.102Z - !!-------the response should contain a "accessToken" is started-------!!
+2024-06-20T08:07:45.103Z - !!-------the response should contain a "accessToken" is ended-------!!
+2024-06-20T08:07:45.150Z - !!-------Successful login is ended-------!!
+2024-06-20T08:07:45.324Z - !!-------Successful login is started-------!!
+2024-06-20T08:07:45.325Z - !!-------I navigate to the API url is started-------!!
+2024-06-20T08:07:45.326Z - !!-------I navigate to the API url is ended-------!!
+2024-06-20T08:07:45.327Z - !!-------I login with username "michaelw" and password "michaelw" is started-------!!
+2024-06-20T08:07:45.579Z - !!-------I login with username "michaelw" and password "michaelw" is ended-------!!
+2024-06-20T08:07:45.581Z - !!-------the response status should be 400 is started-------!!
+2024-06-20T08:07:45.581Z - !!-------the response status should be 400 is ended-------!!
+2024-06-20T08:07:45.582Z - !!-------the response should contain a "errorMessage" is started-------!!
+2024-06-20T08:07:45.583Z - !!-------the response should contain a "errorMessage" is ended-------!!
+2024-06-20T08:07:45.628Z - !!-------Successful login is ended-------!!
+2024-06-20T08:07:45.809Z - !!-------Fetch products with access token is started-------!!
+2024-06-20T08:07:45.810Z - !!-------I navigate to the API url is started-------!!
+2024-06-20T08:07:45.811Z - !!-------I navigate to the API url is ended-------!!
+2024-06-20T08:07:45.811Z - !!-------I login with username "michaelw" and password "michaelwpass" is started-------!!
+2024-06-20T08:07:46.072Z - !!-------I login with username "michaelw" and password "michaelwpass" is ended-------!!
+2024-06-20T08:07:46.074Z - !!-------I have a valid access token is started-------!!
+2024-06-20T08:07:46.074Z - !!-------I have a valid access token is ended-------!!
+2024-06-20T08:07:46.075Z - !!-------I fetch products with a limit of 2 is started-------!!
+2024-06-20T08:07:46.351Z - !!-------I fetch products with a limit of 2 is ended-------!!
+2024-06-20T08:07:46.352Z - !!-------the response status should be 200 is started-------!!
+2024-06-20T08:07:46.353Z - !!-------the response status should be 200 is ended-------!!
+2024-06-20T08:07:46.353Z - !!-------the response should contain 2 products is started-------!!
+2024-06-20T08:07:46.355Z - !!-------the response should contain 2 products is ended-------!!
+2024-06-20T08:07:46.395Z - !!-------Fetch products with access token is ended-------!!
+2024-06-20T08:07:46.557Z - !!-------Update product is started-------!!
+2024-06-20T08:07:46.559Z - !!-------I navigate to the API url is started-------!!
+2024-06-20T08:07:46.559Z - !!-------I navigate to the API url is ended-------!!
+2024-06-20T08:07:46.560Z - !!-------I login with username "michaelw" and password "michaelwpass" is started-------!!
+2024-06-20T08:07:46.892Z - !!-------I login with username "michaelw" and password "michaelwpass" is ended-------!!
+2024-06-20T08:07:46.893Z - !!-------I have a valid access token is started-------!!
+2024-06-20T08:07:46.894Z - !!-------I have a valid access token is ended-------!!
+2024-06-20T08:07:46.894Z - !!-------I update the first product name to "Updated Product Name" is started-------!!
+2024-06-20T08:07:47.680Z - !!-------I update the first product name to "Updated Product Name" is ended-------!!
+2024-06-20T08:07:47.680Z - !!-------the update response status should be 200 is started-------!!
+2024-06-20T08:07:47.681Z - !!-------the update response status should be 200 is ended-------!!
+2024-06-20T08:07:47.723Z - !!-------Update product is ended-------!!
+2024-06-20T08:07:47.886Z - !!-------Delete product is started-------!!
+2024-06-20T08:07:47.887Z - !!-------I navigate to the API url is started-------!!
+2024-06-20T08:07:47.888Z - !!-------I navigate to the API url is ended-------!!
+2024-06-20T08:07:47.889Z - !!-------I login with username "michaelw" and password "michaelwpass" is started-------!!
+2024-06-20T08:07:48.173Z - !!-------I login with username "michaelw" and password "michaelwpass" is ended-------!!
+2024-06-20T08:07:48.174Z - !!-------I have a valid access token is started-------!!
+2024-06-20T08:07:48.174Z - !!-------I have a valid access token is ended-------!!
+2024-06-20T08:07:48.175Z - !!-------I delete the first product is started-------!!
+2024-06-20T08:07:48.842Z - !!-------I delete the first product is ended-------!!
+2024-06-20T08:07:48.843Z - !!-------the delete response status should be 200 is started-------!!
+2024-06-20T08:07:48.844Z - !!-------the delete response status should be 200 is ended-------!!
+2024-06-20T08:07:48.892Z - !!-------Delete product is ended-------!!
+2024-06-20T08:07:49.064Z - !!-------User attempts to login with invalid credentials is started-------!!
+2024-06-20T08:07:49.065Z - !!-------I navigate to the Paribu homepage is started-------!!
+2024-06-20T08:07:50.960Z - !!-------I navigate to the Paribu homepage is ended-------!!
+2024-06-20T08:07:50.961Z - !!-------I close the cookie notification is started-------!!
+2024-06-20T08:07:54.596Z - !!-------I close the cookie notification is ended-------!!
+2024-06-20T08:07:54.596Z - !!-------I click on the login button is started-------!!
+2024-06-20T08:07:54.894Z - !!-------I click on the login button is ended-------!!
+2024-06-20T08:07:54.895Z - !!-------I fill in the login form with invalid credentials is started-------!!
+2024-06-20T08:07:56.321Z - !!-------I fill in the login form with invalid credentials is ended-------!!
+2024-06-20T08:07:56.322Z - !!-------I submit the login form is started-------!!
+2024-06-20T08:07:56.434Z - !!-------I submit the login form is ended-------!!
+2024-06-20T08:07:56.434Z - !!-------I should see an error message indicating invalid credentials is started-------!!
+2024-06-20T08:07:57.264Z - !!-------I should see an error message indicating invalid credentials is ended-------!!
+2024-06-20T08:07:57.321Z - !!-------User attempts to login with invalid credentials is ended-------!!
+2024-06-20T08:07:57.509Z - !!-------Check total price calculation is started-------!!
+2024-06-20T08:07:57.511Z - !!-------I navigate to the Paribu homepage is started-------!!
+2024-06-20T08:08:00.062Z - !!-------I navigate to the Paribu homepage is ended-------!!
+2024-06-20T08:08:00.063Z - !!-------I close the cookie notification is started-------!!
+2024-06-20T08:08:02.251Z - !!-------I close the cookie notification is ended-------!!
+2024-06-20T08:08:02.251Z - !!-------I navigate to the Markets page is started-------!!
+2024-06-20T08:08:02.318Z - !!-------I navigate to the Markets page is ended-------!!
+2024-06-20T08:08:02.319Z - !!-------I select the FAN filter is started-------!!
+2024-06-20T08:08:06.370Z - !!-------I select the FAN filter is ended-------!!
+2024-06-20T08:08:06.371Z - !!-------I set the price change time range to 12 hours is started-------!!
+2024-06-20T08:08:06.503Z - !!-------I set the price change time range to 12 hours is ended-------!!
+2024-06-20T08:08:06.504Z - !!-------I click on the 3rd cryptocurrency in the list is started-------!!
+2024-06-20T08:08:06.597Z - !!-------I click on the 3rd cryptocurrency in the list is ended-------!!
+2024-06-20T08:08:06.598Z - !!-------I enter the current price in the Unit Price field is started-------!!
+2024-06-20T08:08:13.723Z - !!-------I enter the current price in the Unit Price field is ended-------!!
+2024-06-20T08:08:13.724Z - !!-------I enter 5 in the Amount field is started-------!!
+2024-06-20T08:08:13.760Z - !!-------I enter 5 in the Amount field is ended-------!!
+2024-06-20T08:08:13.761Z - !!-------the total price should be correctly calculated is started-------!!
+2024-06-20T08:08:13.807Z - !!-------the total price should be correctly calculated is ended-------!!
+2024-06-20T08:08:13.911Z - !!-------Check total price calculation is ended-------!!
