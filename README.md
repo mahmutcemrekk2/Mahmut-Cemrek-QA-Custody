@@ -41,6 +41,11 @@ npm kullanarak:
 veya yarn kullanarak:
 `npm test`
 
+## Test çalıştırma
+`npm test --env=regression`
+`npm test --env=prod`
+`npm test --env=test`
+
 
 
 ## Kullanılan Paketler ve Pluginler
